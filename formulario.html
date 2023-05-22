@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="formulario.js" defer></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+    <table>
+    </thead>
+        <th>Item</th>
+        <th>Produto</th>
+        <th>Preço</th>
+     <thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Laranja</td>
+                    <td>R$ 5,49</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Limão</td>
+                    <td>R$ 3,99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pera</td>
+                    <td>R$ 6,89</td>
+                </tr>
+            </tbody>
+    </table>
+    <br>
+    <form action="/" method="post"></form>
+    <label for="">Selecione um Produto</label>
+    <select name="produto" id="produto">
+        <option value="pera" selected>Pera</option>
+        <option value="limao">Limão</option>
+        <option value="laranja">Laranja</option>
+    </select>
+    <br>
+    <label for="">Selecione a Quantidade</label>
+    <select name="qtde" id="qtde">
+        <option value="1" selected>1 kg</option>
+        <option value="2">2 kg</option>
+        <option value="3">3 kg</option>
+        <option value="4">4 kg</option>
+        <option value="5">5 kg</option>
+    </select>
+    <br><br>
+    
+  
+    <button type="submit" value="enviar" id="btn_enviar">Enviar</button>
+    <br>
+    <div id="res"></div>
+    <button type="submit" value="calcular" id="btn_calcular">Calcular</button>
+</body>
+</html>
